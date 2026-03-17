@@ -22,7 +22,7 @@ void main(){
     if(n1<0 || n1>10 || n2<0 || n2>10 || faltas > aulas){
         printf("Numeros invalidos");
     }
-    else if(presenca >= 25){
+    else if(presenca > 25 && media >=7.0){
         printf("Reprovado por faltas");
     }
     else if(presenca < 25 && media>= 7.5){
@@ -30,5 +30,8 @@ void main(){
     }
     else if(presenca < 25 && media <7.5){
         printf("Reprovado por media");
+    }
+    else if(presenca >25 && media <7.0){
+        printf("Reprovado");
     }
     }
