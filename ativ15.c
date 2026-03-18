@@ -10,11 +10,11 @@ int main(){
         desconto = desconto * 2;
         printf("O seu desconto e: %.1f porcento\n", desconto * 100);
     }
-    else if (valor > 500 && valor < 1000){
+    else if (valor >= 500 && valor < 1000){
         desconto = desconto * 3;
         printf("O seu desconto e: %.1f porcento\n", desconto * 100);
     }
-    else if(valor > 1000){
+    else if(valor >= 1000){
         desconto = desconto * 4;
         printf("O seu desconto e: %.1f porcento\n", desconto * 100);
     }
