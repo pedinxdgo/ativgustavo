@@ -17,7 +17,7 @@ int main (){
     printf("Digite sua altura em metros:\n");
     scanf("%f", &altura);
     imc = IMC(peso, altura);
-    printf("O seu IMC e: %.2f", imc);
+    printf("O seu IMC e: %.2f\n", imc);
 
     if(imc < 18.5){
         printf("Voce esta abaixo do peso!\n");

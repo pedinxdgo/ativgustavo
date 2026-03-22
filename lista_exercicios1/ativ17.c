@@ -19,19 +19,19 @@ void main(){
     scanf("%d", &faltas);
     float presenca = (100 * faltas)/aulas;
 
-    if(n1<0 || n1>10 || n2<0 || n2>10 || faltas > aulas){
+    if(n1 < 0 || n1 > 10 || n2 < 0 || n2 > 10 || faltas > aulas){
         printf("Numeros invalidos");
     }
-    else if(presenca > 25 && media >=7.0){
+    else if(presenca >= 25 && media >= 7.0){
         printf("Reprovado por faltas");
     }
-    else if(presenca < 25 && media>= 7.5){
+    else if(presenca < 25 && media >= 7.5){
         printf("Aprovado");
     }
-    else if(presenca < 25 && media <7.5){
+    else if(presenca < 25 && media < 7.5){
         printf("Reprovado por media");
     }
-    else if(presenca >25 && media <7.0){
+    else if(presenca >= 25 && media < 7.0){
         printf("Reprovado");
     }
     }

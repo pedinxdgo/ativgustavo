@@ -8,7 +8,7 @@ void main(){
         printf("O numero %d e positivo", numero1);
     }
     else if(numero1 == 0){
-        printf("O numero %d e igual a 0", numero1);
+        printf("O numero e igual a 0", numero1);
     }
     else{
         printf("O numero %d e negativo", numero1);

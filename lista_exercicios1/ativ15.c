@@ -6,7 +6,10 @@ int main(){
     printf("Digite o valor da sua compra: ");
     scanf("%d", &valor);
     
-    if(valor>100 && valor < 500){
+    if(valor < 100){
+        printf("O seu desconto e: %.1f porcento\n", desconto * 100);
+    }
+    else if(valor>=100 && valor < 500){
         desconto = desconto * 2;
         printf("O seu desconto e: %.1f porcento\n", desconto * 100);
     }
