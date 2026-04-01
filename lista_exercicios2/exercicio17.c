@@ -12,5 +12,5 @@ void main(){
             palavra[i] = substituto;
         }
 }
-    printf("A palavra invertida e: %s", palavra );
+    printf("A palavra substituida e: %s", palavra );
 }

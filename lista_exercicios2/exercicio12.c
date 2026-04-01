@@ -10,7 +10,7 @@ void main(){
     scanf(" %c", &letra);
     for(int i = 0; i < strlen(palavra); i++) {
         if(palavra[i] == letra) {
-            printf("A letra '%c' foi encontrada na palavra '%s' na posicao %d\n", letra, palavra, i);
+            printf("A letra '%c' foi encontrada na palavra '%s' na posicao %d\n", letra, palavra, i+1);
         }
     }
 }
