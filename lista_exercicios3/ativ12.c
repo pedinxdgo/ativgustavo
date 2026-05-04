@@ -8,5 +8,5 @@ void main() {
         scanf("%d", &numeros[i]);
     }
     soma = numeros[0] + numeros[1] + numeros[2] + numeros[3] + numeros[4];
-    printf("%d ", soma);
+    printf("A soma dos numeros e: %d ", soma);
     }
