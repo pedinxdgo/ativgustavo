@@ -1,0 +1,74 @@
+body {
+    background-color: whitesmoke;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+
+    
+    
+}
+
+.titulo {
+    font-size: 35px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    text-align: center;
+   
+    left: 0;
+    z-index: 1;        /* Joga o texto para trás para não sumir */
+    pointer-events: none;
+    
+}
+
+.logodacopa{
+    position: absolute;
+    top: 13px;         /* Ajuste para alinhar verticalmente com o título */
+    left: 15%;         /* Afastamento da borda esquerda da tela */
+    z-index: 2;
+}
+
+.logodacopa2{
+    position: absolute;
+    top: 13px;         /* Ajuste para alinhar verticalmente com o título */
+    right: 15%;         /* Afastamento da borda esquerda da tela */
+    z-index: 2;
+}
+
+
+
+.subtitulo{
+    text-align: center;
+}
+
+.calendario{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+#data{
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(3, 168, 3);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #333;
+    gap: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 20%;
+    height: 140px;
+}
+
+.jogos{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
