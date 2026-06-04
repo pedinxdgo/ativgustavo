@@ -5,10 +5,10 @@ body {
         #e6eef8
     );
     background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:"Poppins", sans-serif;
     margin: 0;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -43,25 +43,11 @@ body {
     z-index: 2;
 }
 
-
-
 .banner-copa{
-    background: linear-gradient(
-        90deg,
-        #009739,
-        #ffffff,
-        #ce1126
-    );
-
-    color: black;
-    text-align: center;
-    padding: 15px;
-    font-weight: bold;
+    
 }
 
 .calendario{
-    margin-left: 20px;
-    margin-right: 20px;
     display: flex;
     gap: 20px;
 
@@ -84,18 +70,19 @@ body {
 }
 
 .jogos{
-    
     display: flex;
     flex-wrap: wrap;
 }
 
 .grupos{
-    margin-left: 20px;
-    margin-right: 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
+    width: 93%;
+    margin: 0 auto;
 }
 
 .grupo{
@@ -112,17 +99,9 @@ body {
     box-shadow: 0 0 5px #333;
     padding: 10px;
     box-sizing: border-box;
-    flex: 1;
-    min-width: 300px;
     align-items: center;
     transition: 0.3s;
 }
-
-.tabela{
-    margin-left: 20px;
-}
-
-
 
 .grupo li {
     display: flex;
@@ -137,14 +116,16 @@ body {
   .grupo ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0 0 0;
-    line-height: 18px;
+    margin: 0;
+    line-height: 25px;
   }
 
   .grupo p{
     color: #F4C542;
     font-weight: bold;
     font-size: 24px;
+    margin-top: 2px;
+    margin-bottom: 10px;
 }
 
 .grupo:hover{
@@ -156,10 +137,11 @@ body {
     height: 0.8px;
     border: 0px;
     border-top: 0.5px solid rgb(255, 255, 255);
+    opacity: 50%;
   }
 
   .fi{
-    font-size: 20px;
+    font-size: 25px;
     object-fit: cover;
     border-radius: 1.5px;
 }
@@ -168,21 +150,53 @@ body {
     display: flex;
     align-items: center;
     gap: 6px;
+    font-size: 22px;
 }
 
 .cabecalho-tabela{
     display: grid;
-    grid-template-columns: 5fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
-    font-size: 16px;
+    grid-template-columns:  4fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    font-size: 18px;
     font-weight: bold;
     color: #F4C542;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 }
 
 .linha-time{
     display: grid;
-    grid-template-columns: 5fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
+    grid-template-columns:  4fr 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     width: 100%;
 }
 
+a {
+    background-color: #001F5B;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #333;
+    transition: 0.3s;
+    padding: 12px 20px;
+}
+
+a:hover{
+    background-color: #F4C542;
+    color: black;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.titulo-grupo {
+    display: flex;
+    align-items: center;
+}
