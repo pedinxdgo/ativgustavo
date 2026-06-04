@@ -1,23 +1,28 @@
 body {
-    background-color: whitesmoke;
+    background: linear-gradient(
+        180deg,
+        #f5f7fa,
+        #e6eef8
+    );
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column; 
     justify-content: center;
-
-    
-    
 }
 
 .titulo {
     font-size: 35px;
-    background-color: rgb(0, 0, 0);
+    background: linear-gradient(
+        90deg,
+        #001F5B,
+        #003DA5,
+        #001F5B
+    );
     color: white;
     width: 100%;
     text-align: center;
-   
     left: 0;
     z-index: 1;        /* Joga o texto para trás para não sumir */
     pointer-events: none;
@@ -27,80 +32,97 @@ body {
 .logodacopa{
     position: absolute;
     top: 13px;         /* Ajuste para alinhar verticalmente com o título */
-    left: 5%;         /* Afastamento da borda esquerda da tela */
+    left: 6%;         /* Afastamento da borda esquerda da tela */
     z-index: 2;
 }
 
 .logodacopa2{
     position: absolute;
     top: 13px;         /* Ajuste para alinhar verticalmente com o título */
-    right: 5%;         /* Afastamento da borda esquerda da tela */
+    right: 6%;         /* Afastamento da borda esquerda da tela */
     z-index: 2;
 }
 
 
 
-.subtitulo{
+.banner-copa{
+    background: linear-gradient(
+        90deg,
+        #009739,
+        #ffffff,
+        #ce1126
+    );
+
+    color: black;
     text-align: center;
+    padding: 15px;
+    font-weight: bold;
 }
 
 .calendario{
-    margin-left: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
-    flex-direction: row;
     gap: 20px;
 
 }
 
-.data{
+.data{ /*quadrado azul*/
+    margin-left: 20px;
+    margin-right: 20px;
     text-align: center;
     font-size: 20px;
     background-color: #001F5B;
     color: white;
     border-radius: 10px;
     box-shadow: 0 0 5px #333;
-    gap: 25px;
     padding: 10px;
     box-sizing: border-box;
-    min-width: 220px;
+    min-width: 280px;
     flex: 1;
-    height: 190px;
-}
-
-.jogos{
-    margin-left: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    flex-direction: row;
     
 }
 
+.jogos{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .grupos{
-    margin-left: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .grupo{
     text-align:start;
     font-size: 20px;
-    background-color: #d70001;
-    background-color: #751310;
+    background: linear-gradient(
+        135deg,
+        #001F5B,
+        #00308F
+    );
+    border: 1px solid rgba(255,255,255,0.15);
     color: white;
     border-radius: 10px;
     box-shadow: 0 0 5px #333;
     padding: 10px;
     box-sizing: border-box;
     flex: 1;
-    min-width: 220px;
-    
+    min-width: 300px;
+    align-items: center;
+    transition: 0.3s;
 }
 
 .tabela{
-    margin-left: 100px;
+    margin-left: 20px;
 }
+
+
 
 .grupo li {
     display: flex;
@@ -108,6 +130,8 @@ body {
     margin: 5px 0;
     text-align: left;
     font-size: 18px;
+    align-items: center;
+    gap: 10px;
   }
 
   .grupo ul {
@@ -117,9 +141,48 @@ body {
     line-height: 18px;
   }
 
+  .grupo p{
+    color: #F4C542;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.grupo:hover{
+    transform: translateY(-5px);
+}
+
   hr {
     width: 100%;
     height: 0.8px;
     border: 0px;
     border-top: 0.5px solid rgb(255, 255, 255);
   }
+
+  .fi{
+    font-size: 20px;
+    object-fit: cover;
+    border-radius: 1.5px;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.cabecalho-tabela{
+    display: grid;
+    grid-template-columns: 5fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
+    font-size: 16px;
+    font-weight: bold;
+    color: #F4C542;
+    margin-bottom: 8px;
+}
+
+.linha-time{
+    display: grid;
+    grid-template-columns: 5fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
+    align-items: center;
+    width: 100%;
+}
+
